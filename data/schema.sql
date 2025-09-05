@@ -1,0 +1,2 @@
+-- SQLite schema (app autocreates if missing). For Postgres/Supabase, adapt types.
+-- See src/db.py for the structure used.

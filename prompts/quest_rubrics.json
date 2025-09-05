@@ -1,0 +1,6 @@
+{
+  "AI/Data": "Artifact shows data retrieval or quick viz; accepts Colab/Gist link or PNG.",
+  "Dev": "Artifact shows code run or transaction; accepts GitHub/Gist link, Codespace URL, or tx hash screenshot.",
+  "Design": "Artifact shows a small UI tweak or banner; accepts PNG/JPG link or upload.",
+  "Growth": "Artifact shows copy or plan; accepts tweet/linkedin post link or doc link."
+}
