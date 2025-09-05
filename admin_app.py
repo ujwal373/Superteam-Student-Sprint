@@ -12,7 +12,7 @@ section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] [data-test
 }
 
 /* Optional: keep the sidebar itself (for future widgets) but slim it down */
-section[data-testid="stSidebar"] { width: 300px; }
+/* section[data-testid="stSidebar"] { width: 300px; } */
 </style>
 """, unsafe_allow_html=True)
 
