@@ -51,3 +51,6 @@ try:
         )
 except Exception as e:
     st.error(f"Export failed: {e}")
+
+import os, streamlit as st
+st.caption(f"[Admin] USE_SUPABASE={os.getenv('USE_SUPABASE')} • URL set={bool(os.getenv('SUPABASE_URL'))} • SERVICE={bool(os.getenv('SUPABASE_SERVICE_KEY'))}")

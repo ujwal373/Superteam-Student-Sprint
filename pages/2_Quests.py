@@ -1,3 +1,8 @@
+import os, streamlit as st
+if os.getenv("APP_MODE") == "admin":
+    st.stop()  # hide this page in the admin deployment
+
+
 import streamlit as st
 from src.db import db_init, get_user, save_event, get_or_create_track, save_submission, get_submissions
 from src.agent import route_track, make_micro_quests

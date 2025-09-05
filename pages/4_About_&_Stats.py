@@ -1,3 +1,8 @@
+import os, streamlit as st
+if os.getenv("APP_MODE") == "admin":
+    st.stop()  # hide this page in the admin deployment
+
+
 import streamlit as st
 import os, socket
 from src.db import db_init, recap_stats, list_social_posts

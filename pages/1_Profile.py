@@ -1,6 +1,9 @@
+import os, streamlit as st
+if os.getenv("APP_MODE") == "admin":
+    st.stop()  # hide this page in the admin deployment
+
 from src.db import db_init, upsert_user, set_track
 import streamlit as st
-
 st.title("👤 Profile")
 db_init()
 with st.form("profile"):
