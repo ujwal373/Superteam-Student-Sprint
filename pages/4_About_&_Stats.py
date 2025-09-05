@@ -51,7 +51,7 @@ c3.metric("Approved proofs", stats["approved"])
 
 st.divider()
 
-st.subheader("Auto‑generated summary")
+st.subheader("Summary")
 st.write(f"""
 We launched the Superteam Student Sprint to onboard Irish university students.
 The system routed participants into tracks and assigned 3 micro‑quests, including community join + X follow.
