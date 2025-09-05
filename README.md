@@ -114,7 +114,6 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished.
 
-[Full MIT license text continues…]
 
 
 
