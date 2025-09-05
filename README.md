@@ -97,9 +97,9 @@ SUPERTEAM_X_HANDLE = "@SuperteamIE"
 - 🔬 Skilled in Data Science, AI/ML, and Agentic AI frameworks (LangChain, LangServe, AutoGen)
 - 🌐 Passionate about Web3, Solana, and building student-driven communities
 
-[GitHub] (https://github.com/ujwal373?utm_source=chatgpt.com)
-[LinkedIn] (https://www.linkedin.com/in/ujwal-mojidra-28098723a/?utm_source=chatgpt.com)
-[Google-Cloud-Profile] (https://www.cloudskillsboost.google/public_profiles/23ec8bf9-3116-4ea3-865a-d0811a56a26e?utm_source=chatgpt.com)
+- [GitHub](https://github.com/ujwal373?utm_source=chatgpt.com)
+- [LinkedIn](https://www.linkedin.com/in/ujwal-mojidra-28098723a/?utm_source=chatgpt.com)
+- [Google-Cloud-Profile](https://www.cloudskillsboost.google/public_profiles/23ec8bf9-3116-4ea3-865a-d0811a56a26e?utm_source=chatgpt.com)
 
 ---
 
