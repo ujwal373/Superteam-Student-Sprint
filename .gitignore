@@ -10,9 +10,6 @@ __pycache__/
 env/
 venv/
 
-# Streamlit
-#.streamlit/
-
 # Local uploads
 uploads/
 

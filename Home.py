@@ -28,8 +28,8 @@ with cta1:
     st.page_link("pages/1_Profile.py", label="Start → Profile")
 with cta2:
     st.page_link("pages/2_Quests.py", label="Go to Quests")
-with cta3:
-    st.page_link("pages/3_Admin.py", label="Admin (password)")
+#with cta3:
+#   st.page_link("pages/3_Admin.py", label="Admin (password)")
 
 st.info("Tip: Keep your **Telegram** & **X (Twitter)** handles handy for quick verification.")
 
@@ -107,8 +107,8 @@ with ql2:
     st.page_link("pages/2_Quests.py", label="Quests")
 with ql3:
     st.page_link("pages/4_About_&_Stats.py", label="About & Stats")
-with ql4:
-    st.page_link("pages/3_Admin.py", label="Admin")
+#with ql4:
+    #st.page_link("pages/3_Admin.py", label="Admin")
 
 st.divider()
 
