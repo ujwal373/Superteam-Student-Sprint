@@ -1,20 +1,28 @@
 # admin_app.py
 import os, streamlit as st
-# Hide the auto-generated "Pages" nav so only Admin UI shows
+
+# Collapse by default (prevents flicker)
+st.set_page_config(page_title="Admin — Superteam Sprint",
+                   page_icon="🛡️",
+                   layout="wide",
+                   initial_sidebar_state="collapsed")
+
+# Hide the sidebar *and* the auto "Pages" nav, and reclaim the space
 st.markdown("""
 <style>
-/* Hide the entire pages navigation block */
+/* remove sidebar and its nav completely */
+section[data-testid="stSidebar"] { display: none !important; }
 div[data-testid="stSidebarNav"] { display: none !important; }
 
-/* Optional: also hide the "Pages" heading if present */
-section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] [data-testid="stSidebarHeader"] {
-  display: none !important;
-}
+/* expand main area to full width */
+div[data-testid="stAppViewContainer"] > .main { margin-left: 0 !important; }
+div[data-testid="stHeader"] { left: 0 !important; }
 
-/* Optional: keep the sidebar itself (for future widgets) but slim it down */
-/* section[data-testid="stSidebar"] { width: 300px; } */
+/* optional: hide the hamburger (sidebar toggle) in the header */
+button[title="Menu"] { display: none !important; }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 from src.db import db_init, admin_list_subs, admin_set_status, export_users_csv
