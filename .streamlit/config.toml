@@ -1,0 +1,10 @@
+[server]
+# Avoid inotify limit errors on Streamlit Cloud
+fileWatcherType = "poll"   # or "none" to fully disable hot-reload
+
+# (optional) other sane defaults
+headless = true
+enableXsrfProtection = true
+
+[client]
+toolbarMode = "minimal"

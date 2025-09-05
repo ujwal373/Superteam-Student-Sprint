@@ -11,7 +11,7 @@ env/
 venv/
 
 # Streamlit
-.streamlit/
+#.streamlit/
 
 # Local uploads
 uploads/
