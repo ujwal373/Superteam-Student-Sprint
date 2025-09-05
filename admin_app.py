@@ -1,5 +1,22 @@
 # admin_app.py
 import os, streamlit as st
+# Hide the auto-generated "Pages" nav so only Admin UI shows
+st.markdown("""
+<style>
+/* Hide the entire pages navigation block */
+div[data-testid="stSidebarNav"] { display: none !important; }
+
+/* Optional: also hide the "Pages" heading if present */
+section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] [data-testid="stSidebarHeader"] {
+  display: none !important;
+}
+
+/* Optional: keep the sidebar itself (for future widgets) but slim it down */
+section[data-testid="stSidebar"] { width: 300px; }
+</style>
+""", unsafe_allow_html=True)
+
+
 from src.db import db_init, admin_list_subs, admin_set_status, export_users_csv
 
 st.set_page_config(page_title="Admin — Superteam Sprint", page_icon="🛡️", layout="wide")
