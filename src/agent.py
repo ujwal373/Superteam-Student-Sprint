@@ -81,7 +81,7 @@ def make_micro_quests(track: str):
         return quests
 
     prompt = (
-        f"Create ONE short micro-quest for the '{track}' track. It must take <10 minutes and yield a shareable artifact "
+        f"Create ONE short and easy micro-quest for the '{track}' track. It must take <50 minutes and yield a shareable artifact "
         f"(text link, small image, tx hash, or gist). Return JSON: {{\"title\":\"...\",\"instructions\":\"...\"}}"
     )
     try:
