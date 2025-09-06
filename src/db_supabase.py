@@ -66,9 +66,19 @@ def save_event(user_id, type, meta):
 def get_signed_url(path: str, seconds: int = 3600) -> str:
     return sb().storage.from_(STORAGE_BUCKET).create_signed_url(path, seconds)["signedURL"]
 
-def _upload_bytes(folder: str, b: bytes) -> str:
-    key = f"{folder}/{str(time.time()).replace('.','')}.png"
-    sb().storage.from_(STORAGE_BUCKET).upload(key, b, {"content-type": "image/png", "upsert": True})
+def _upload_bytes(folder: str, b: bytes, content_type: str = "image/png") -> str:
+    # stable timestamp filename
+    key = f"{folder}/{int(time.time()*1000)}.png"
+    # IMPORTANT: all header values must be strings
+    sb().storage.from_(STORAGE_BUCKET).upload(
+        key,
+        b,
+        {
+            "content-type": content_type,
+            "x-upsert": "true",          # string, not bool
+            "cache-control": "3600"      # optional but string
+        },
+    )
     return key
 
 # --- submissions ---
