@@ -36,21 +36,20 @@ for i, q in enumerate(quests, start=1):
             "Paste link / handle / short note",
             key=f"proof_text_{i}",
         )
-        proof_img = st.file_uploader(
-            "Upload screenshot (optional)",
-            type=["png", "jpg", "jpeg"],
-            key=f"proof_img_{i}",
-        )
+        proof_img = st.file_uploader("Upload screenshot (optional)", type=["png","jpg","jpeg"], key=f"img_{i}")
+        file_bytes = proof_img.read() if proof_img else None
+
         if st.button(f"Submit Q{i}", key=f"submit_{i}"):
             save_submission(
-                user_id=user_id,
-                quest_idx=i,
-                title=q["title"],
-                track=track,
-                text=proof_text,
-                file=proof_img.read() if proof_img else None,
+            user_id=user_id,
+            quest_idx=i,
+            title=q["title"],
+            track=track,
+            text=proof_text.strip(),
+            file=file_bytes,              # bytes (not UploadedFile)
             )
-            st.success("Submitted!")
+        st.success(f"Q{i} submitted!")
+
             #st.rerun()
 
 st.divider()
